@@ -1,0 +1,50 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+          <ul class="nav_bar">
+            <li><a href="{% url 'index' %}">DARAYUTH HANG</a>
+
+            </li>
+
+            <li><a href="{% url 'project' %}">PROJECTS</a>
+
+            </li>
+
+            <li><a href="#">ON MOBILE & WEB</a>
+
+            </li>
+
+            <li><a href="#">PHOTOS</a>
+
+            </li>
+
+            <li><a href="{% url 'contact' %}">CONTACTS</a>
+
+            </li>
+          </ul>
+
+
+          <!------ introduce yourself --->
+
+          <div class="introduce_yourself">
+                <h1>Hi, I'm Darayuth</h1>
+                <p>im a tech savy currently looking for job
+                as web developer and android mobile development.</p>
+
+                <p>You can follow me on GitHub
+                  <a href="#">GitHub</a>
+                </p>
+          </div>
+
+    </div>
+  </body>
+</html>

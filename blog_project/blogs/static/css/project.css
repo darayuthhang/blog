@@ -1,0 +1,107 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h3{
+    font-size: 1.50em;
+    font-weight: bold;
+}
+html{
+  margin: 0;
+  padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #424242;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    overflow-y: scroll;
+}
+
+a{color: #03A9F4;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/********************* Container ********/
+.container{
+  display: grid;
+  justify-content: center;
+
+}
+
+.nav_bar{
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.nav_bar li{
+  text-decoration: none;
+  list-style: none;
+}
+
+/*** change font nav bar ***/
+.nav_bar li a {
+
+    color: #424242;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*** hover for font nav-bar***/
+.nav_bar li a:hover{
+  color: #03A9F4;
+  border-bottom: 5px solid #03A9F4;
+  text-decoration: none;
+}
+
+
+
+/****** add color, and delete underline in anchor tag in the
+name **/
+
+.project_content{
+    text-align: justify;
+}
+
+
+/*** add over to android mobile app name****/
+
+.project_content h2 a:hover{
+    color: 
+}
+
+
+/********scale fit to mobile ********/
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 600px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .nav_bar{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+
+
